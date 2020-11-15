@@ -10,6 +10,12 @@
    
 }
 
+.basvideo {
+    font-family: 'Montserrat';
+    background-color: #F0F2F0;
+    text-align: center;
+}
+
 nav {
     background-color: black;
     display: flex;
@@ -137,15 +143,35 @@ a:hover {
 }
 
 .newcollection {
-    margin-top: 300px;
+    margin-top: 200px;
 }
 
 .nike {
     display: flex;
     justify-content: space-around;
     margin-top: 200px;
+    font-family: 'Montserrat';
 }
 
+
+.rfs {
+    font-family: 'Montserrat';
+    text-align: center;
+    background-color: #F0F2F0;
+}
+
+.marques {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    font-family: 'Montserrat';
+}
+
+.titremarque {
+    font-family: 'Montserrat';
+    margin-top: 100px;
+    margin-left: 200px;
+}
 @media screen and (max-width: 1200px) {
     #myvideo {
        
