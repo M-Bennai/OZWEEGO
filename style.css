@@ -20,39 +20,76 @@ nav {
     background-color: black;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
     min-height: 8vh;
-    
-   
+    width: 100%;
     
 }
+
+.logo {
+    margin-left: 20px;
+    width: 100px;
+}
+
+
+
+.menuicons {
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.icons {
+    cursor: pointer;
+    display: flex;
+   
+    z-index: 2;
+}
+
 
 .menu {
     color: white;
     font-family: 'Montserrat', sans-serif;
     list-style: none;
     display: flex;
-    justify-content: space-around;
-    width: 30%;
+    
+    width: 100%;
     font-size: 14px;
-    margin-left: 600px;
    z-index: 2;
+   
 }
+
+.newin {
+    margin-right: 20px;
+}
+
+.homme {
+    margin-right: 20px;
+}
+
+.femme {
+    margin-right: 20px;
+}
+
+.enfants {
+    margin-right: 20px;
+}
+
 
 .menu a {
     text-decoration: none;
     color: white;
 }
 
-.icons {
-    display: flex;
-    justify-content: flex-end;
-   
-}
+
 
 
 .bag {
     margin-left: 10px;
+    margin-right: 20px;
 }
 
 
@@ -69,6 +106,7 @@ font-family: 'Montserrat';
 display: flex;
 justify-content: space-around;
 
+
 margin-top: 70px;
 
   }
@@ -76,6 +114,7 @@ margin-top: 70px;
   .items1 {
       display: flex;
       flex-direction: column;
+      
   }
 
   .items2 {
@@ -114,6 +153,8 @@ margin-top: 70px;
     padding: 10px;
     border-style: none;
     z-index: 2;
+    margin-top: 50px;
+    
     
 }
 
@@ -149,11 +190,28 @@ a:hover {
 .nike {
     display: flex;
     justify-content: space-around;
+    width: 100%;
     margin-top: 200px;
     font-family: 'Montserrat';
 }
 
+.ready {
+    margin-top: 150px;
+    display: flex;
+    justify-content: space-around;
+    
+}
 
+.videorfs {
+    display: flex;
+    width: 50%;
+    
+}
+
+.readyforsport {
+    display: flex;
+    width: 50%;
+}
 .rfs {
     font-family: 'Montserrat';
     text-align: center;
@@ -163,6 +221,7 @@ a:hover {
 .marques {
     display: flex;
     justify-content: space-around;
+
     margin-top: 100px;
     font-family: 'Montserrat';
 }
@@ -172,7 +231,17 @@ a:hover {
     margin-top: 100px;
     margin-left: 200px;
 }
+
+.foot {
+    margin-top: 150px;
+    background-color: black;
+}
 @media screen and (max-width: 1200px) {
+
+    html,body {
+        overflow-x: hidden;
+    }
+
     #myvideo {
        
         height: 100%;
@@ -187,8 +256,361 @@ a:hover {
     padding: 8px;
     border-style: none;
     z-index: 2;
+    margin-top: 0px;
     }
     nav {
         width: 100%;
     }
+
+    .ready {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .videorfs {
+        width: 50%;
+
+    }
+
+    .readyforsport {
+        width: 50%;
+    }
+
+    
+
+    .marques {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+}
+.nike {
+    display: flex;
+flex-direction: column;
+align-items: center;
+}
+.titremarque {
+    margin-left: 50px;
+}
+
+.imgnike {
+    width: 500px;
+}
+.imgntf {
+    margin-top: 40px;
+    width: 500px;
+}
+
+.imgadidas {
+    margin-top: 40px;
+    width: 500px;
+}
+
+.imgfila {
+    margin-top: 40px;
+    width: 500px;
+}
+.sweat {
+    margin-top: 40px;
+    
+}
+
+.parka{
+    margin-top: 40px;
+}
+}
+
+@media screen and (max-width: 1000px) {
+
+    
+    .icons {
+        display: block;
+    }
+    .items {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+    
+    .nike {
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    .ready {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .readyforsport {
+        width: 100%;
+    }
+
+    .videorfs {
+        width: 100%;
+        height: 400px;
+    }
+    .menu {
+        position: fixed;
+        top: 0;
+        height: 1000px;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        
+        z-index: 2;
+    
+    }
+
+
+    .items2 {
+        margin-top: 40px;
+    }
+    
+    .items3 {
+        margin-top: 40px;
+    }
+    
+    .sweat {
+        margin-top: 40px;
+        
+    }
+    
+    .parka{
+        margin-top: 40px;
+       
+    }
+    .titremarque {
+        margin-left: 50px;
+    }
+    .imgntf {
+        margin-top: 40px;
+    }
+    
+    .imgadidas {
+        margin-top: 40px;
+    }
+    
+    .imgfila {
+        margin-top: 40px;
+    }
+
+    
+
+}
+@media all and (max-device-width: 768px) {
+    .ready {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .readyforsport {
+        width: 100%;
+    }
+
+    .videorfs {
+        width: 100%;
+        height: 400px;
+    }
+    .items2 {
+        margin-top: 40px;
+    }
+    
+    .items3 {
+        margin-top: 40px;
+    }
+    .videodescrip {
+    
+        font-family: 'Montserrat';
+        font-weight: bolder;
+        position: absolute;
+        width: 100%;
+        top: 0%;
+        left: 5%;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        margin-top: 0%;
+        font-size: 25px;
+        color: white;
+        z-index: 2;
+        
+    }
+
+    .explore {
+    position: absolute;
+     margin-bottom: 100px;
+     left: -5%;
+     
+        
+    }
+    .titremarque {
+        margin-left: 50px;
+    }
+    .imgntf {
+        margin-top: 40px;
+    }
+
+    .imgadidas {
+        margin-top: 40px;
+    }
+
+    .imgfila {
+        margin-top: 40px;
+    }
+}
+@media all and (max-device-width: 690px) {
+ 
+  .superstar {
+    width: 250px;
+    
+}
+.airforce {
+    width: 250px;
+    
+}
+.stansmith {
+    width: 250px;
+}
+.article1 {
+    font-size: 18x;
+    margin-left: 65px;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+}
+.items2 {
+    margin-top: 40px;
+}
+
+.items3 {
+    margin-top: 40px;
+}
+#myvideo {
+    width:700px;
+    height: 100%;
+}
+
+
+
+
+.veste {
+    width: 360px;
+    height: 480px;
+}
+
+.sweat {
+    margin-top: 40px;
+    width: 360px;
+    height: 480px;
+}
+
+.parka{
+    margin-top: 40px;
+    width: 360px;
+    height: 480px;
+}
+
+.titremarque {
+    margin-left: 50px;
+}
+.imgntf {
+    margin-top: 40px;
+}
+
+.imgadidas {
+    margin-top: 40px;
+}
+
+.imgfila {
+    margin-top: 40px;
+}
+
+
+}
+@media all and (max-device-width: 570px) {
+
+
+    .superstar {
+        width: 250px;
+        
+    }
+    .airforce {
+        width: 250px;
+        
+    }
+    .stansmith {
+        width: 250px;
+    }
+    .article1 {
+        font-size: 18x;
+        margin-left: 65px;
+    }
+
+    .items {
+        display: flex;
+        align-items: center;
+    }
+    .items2 {
+        margin-top: 40px;
+    }
+
+    .items3 {
+        margin-top: 40px;
+    }
+    #myvideo {
+        width:700px;
+        height: 100%;
+    }
+
+    .videodescrip {
+        display: flex;
+    }
+    
+
+    .veste {
+        width: 360px;
+    }
+
+    .sweat {
+        margin-top: 40px;
+        width: 360px;
+    }
+
+    .parka{
+        margin-top: 40px;
+        width: 360px;
+    }
+
+    .titremarque {
+        margin-left: 50px;
+    }
+    .imgntf {
+        margin-top: 40px;
+    }
+
+    .imgadidas {
+        margin-top: 40px;
+    }
+
+    .imgfila {
+        margin-top: 40px;
+    }
+
+
+    
+}
+
+@media all and (max-device-width: 480px) {
+    
+    
+   
+      
 }
