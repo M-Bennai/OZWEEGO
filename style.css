@@ -4,16 +4,16 @@
     box-sizing: border-box;
 }
 
-#myvideo {
-    width: 100%;
+.banniere {
     z-index: -99;
-   
 }
 
-.basvideo {
+.hautnike {
     font-family: 'Montserrat';
     background-color: #F0F2F0;
     text-align: center;
+    
+
 }
 
 nav {
@@ -24,7 +24,7 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     min-height: 8vh;
-    width: 100%;
+   
     
 }
 
@@ -51,15 +51,30 @@ nav {
 
 
 .menu {
-    color: white;
-    font-family: 'Montserrat', sans-serif;
+    
     list-style: none;
     display: flex;
-    
+    justify-content: space-around;
     width: 100%;
     font-size: 14px;
    z-index: 2;
    
+}
+.menu li {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.burger div {
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    margin: 5px;
+}
+
+.burger {
+    display: none;
+    margin-right: 20px;
 }
 
 .newin {
@@ -105,8 +120,6 @@ nav {
 font-family: 'Montserrat';
 display: flex;
 justify-content: space-around;
-
-
 margin-top: 70px;
 
   }
@@ -128,53 +141,7 @@ margin-top: 70px;
 
 }
 
-.videodescrip {
-    
-    font-family: 'Montserrat';
-    font-weight: bolder;
-    position: absolute;
-    top: 0;
-    left: 10%;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-    
-    font-size: 70px;
-    color: white;
-    
-}
 
-.explore {
-    font-size: 20px;
-    font-family: 'Montserrat';
-    background-color: white;
-    border-radius: 5px;
-    padding: 10px;
-    border-style: none;
-    z-index: 2;
-    margin-top: 50px;
-    
-    
-}
-
-.explore a {
-    text-decoration: none;
-    color: black;
-}
-
-.button {
-    font-family: 'Montserrat';
-    font-weight: bolder;
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    bottom: 0;
-    right: 0;
-    display: flex;
-    align-items: center;
-   
-}
 
 a:hover {
     
@@ -190,8 +157,9 @@ a:hover {
 .nike {
     display: flex;
     justify-content: space-around;
+    margin-top: 100px;
     width: 100%;
-    margin-top: 200px;
+    
     font-family: 'Montserrat';
 }
 
@@ -235,29 +203,56 @@ a:hover {
 .foot {
     margin-top: 150px;
     background-color: black;
+    width: 100%;
+    height: 220px;
+}
+
+.socialm {
+    display: flex;
+    justify-content: flex-end;
+    
+   
+}
+
+.facebook {
+    margin-right: 15px;
+}
+
+.instagram {
+    margin-right: 150px;
+}
+
+.twitter {
+    margin-right: 15px;
+}
+
+.youtube {
+    margin-right: 15px;
+}
+
+.logofooter {
+   
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.super-star {
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+.superstartitre {
+    font-family: 'Montserrat';
+    margin-left: 80px;
+    margin-top: 150px;
 }
 @media screen and (max-width: 1200px) {
 
-    html,body {
-        overflow-x: hidden;
-    }
-
-    #myvideo {
-       
-        height: 100%;
-    }
-    .videodescrip {
-        font-size: 45px;
-    }
-
-    .explore {
-        font-size: 14px;
-    border-radius: 4px;
-    padding: 8px;
-    border-style: none;
-    z-index: 2;
-    margin-top: 0px;
-    }
+   
     nav {
         width: 100%;
     }
@@ -322,10 +317,59 @@ align-items: center;
 
 @media screen and (max-width: 1000px) {
 
-    
-    .icons {
+    html, body {
+        overflow-x: hidden;
+    }
+    .menu {
+        position: absolute;
+        right: 0;
+        height: 92Vh;
+        top: 8vh;
+        background-color: black;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        
+        align-items: center;
+        transform: translateX(100%);
+       
+        
+        
+    }
+
+    .nav-active {
+        transform: translateX(0%);
+        transition:transform 0.5s ease-in;
+    }
+
+    @keyframes menuFade {
+        from{
+            opacity: 0;
+            transform: translateX(50px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0px);
+        }
+    }
+
+    .toggle .line1 {
+        transform: rotate(-45deg translate(-5px,6px));
+    }
+
+    .toggle .line2 {
+        opacity:0;
+    }
+
+    .toggle .line3 {
+        transform: rotate(-45deg translate(-5px,6px));
+    }
+
+    .burger {
         display: block;
     }
+
+
     .items {
         display: flex;
     flex-direction: column;
@@ -351,21 +395,7 @@ align-items: center;
         width: 100%;
         height: 400px;
     }
-    .menu {
-        position: fixed;
-        top: 0;
-        height: 1000px;
-        background-color: black;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 50%;
-        transform: translateX(100%);
-        
-        z-index: 2;
     
-    }
-
 
     .items2 {
         margin-top: 40px;
@@ -398,7 +428,10 @@ align-items: center;
     .imgfila {
         margin-top: 40px;
     }
-
+    #myvideo {
+        width: 1000px;
+        height: 100%;
+    }
     
 
 }
@@ -423,32 +456,7 @@ align-items: center;
     .items3 {
         margin-top: 40px;
     }
-    .videodescrip {
     
-        font-family: 'Montserrat';
-        font-weight: bolder;
-        position: absolute;
-        width: 100%;
-        top: 0%;
-        left: 5%;
-        bottom: 0;
-        right: 0;
-        display: flex;
-        align-items: center;
-        margin-top: 0%;
-        font-size: 25px;
-        color: white;
-        z-index: 2;
-        
-    }
-
-    .explore {
-    position: absolute;
-     margin-bottom: 100px;
-     left: -5%;
-     
-        
-    }
     .titremarque {
         margin-left: 50px;
     }
@@ -466,6 +474,7 @@ align-items: center;
 }
 @media all and (max-device-width: 690px) {
  
+    
   .superstar {
     width: 250px;
     
@@ -493,12 +502,6 @@ align-items: center;
 .items3 {
     margin-top: 40px;
 }
-#myvideo {
-    width:700px;
-    height: 100%;
-}
-
-
 
 
 .veste {
@@ -537,6 +540,7 @@ align-items: center;
 }
 @media all and (max-device-width: 570px) {
 
+    
 
     .superstar {
         width: 250px;
@@ -565,15 +569,6 @@ align-items: center;
     .items3 {
         margin-top: 40px;
     }
-    #myvideo {
-        width:700px;
-        height: 100%;
-    }
-
-    .videodescrip {
-        display: flex;
-    }
-    
 
     .veste {
         width: 360px;
@@ -591,17 +586,25 @@ align-items: center;
 
     .titremarque {
         margin-left: 50px;
+        
+    }
+
+    .imgnike {
+        width: 400px;
     }
     .imgntf {
         margin-top: 40px;
+        width: 400px;
     }
 
     .imgadidas {
         margin-top: 40px;
+        width: 400px;
     }
 
     .imgfila {
         margin-top: 40px;
+        width: 400px;
     }
 
 
